@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app  # Mapeia a pasta atual para o diretório /app no contêiner
+    ports:
+      - "8050:8050"
